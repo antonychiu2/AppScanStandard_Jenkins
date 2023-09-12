@@ -5,8 +5,11 @@ This sample integration leverages AppScan Standard's CLI capability (appscancmd.
 
 In this example, We will be leveraging an existing scan template (.scant) which contains all the necessary configurations such as authentication, test policy, as well as any other parameters to conduct a successful DAST scan on our target application. 
 
-## Pre-requisite
-This is tested on AppScan Standard 10.2.0. It is possible that previous versions of ASD will also work as the commands used here are standard commands. 
+## Demo pre-requisite 
+* This demo is run on AppScan Standard 10.2.0. It is possible that previous versions of ASD will also work as the commands used here are standard commands.
+* This demo runs on an all-in-one demo box where ASD and Jenkins are installed on a Windows box, we can adapt this to a distributed Jenkins environment where the windows machine which ASD is installed is a Jenkins slave in a distributed architecture. 
+* To repeat the exact same demo as shown here,  first create a folder in C:\scanTemplates
+* Download all the .scan, .scant and .bat file in this repo and put them into the folder
 
 ## Step 1 - Creating the pipeline
 
