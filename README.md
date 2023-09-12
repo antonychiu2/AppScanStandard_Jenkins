@@ -1,9 +1,11 @@
+# AppScan Standard and Jenkins Integration Demo
+
 # Introduction
 This sample integration leverages AppScan Standard's CLI capability (appscancmd.exe) as well as Jenkins' "Execute windows batch command" to automate DAST scanning in an automated environment. 
 
 In this example, We will be leveraging an existing scan template (.scant) which contains all the necessary configurations such as authentication, test policy, as well as any other parameters to conduct a successful DAST scan on our target application. 
 
-# Pre-requisite
+## Pre-requisite
 This is tested on AppScan Standard 10.2.0. It is possible that previous versions of ASD will also work as the commands used here are standard commands. 
 
 ## Step 1 - Creating the pipeline
@@ -54,7 +56,7 @@ After the scan is complete, the HTML scan report should be available on the left
 ![image](https://github.com/antonychiu2/AppScanStandard_Jenkins/assets/5158535/88354295-8c22-4cac-8a06-efb1f3aa019b)
 
 
-# Additional Notes
+## Additional Notes
 
 Please note that your Jenkins's installation has to be running as the user who has proper AppScan License configured. The reason is because the AppScan Standard license is tied to the user profile. If your Jenkins instance runs under a service account, then we have to make sure AppScan license is also configured under that service account. 
 
